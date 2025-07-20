@@ -1,0 +1,5 @@
+name: DuckyColorMix
+version: '${version}'
+main: pl.barpad.duckycolormix.Main
+api-version: '1.18'
+authors: [ Barpad ]

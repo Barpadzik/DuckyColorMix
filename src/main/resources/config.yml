@@ -1,0 +1,103 @@
+# DuckyColorMix Plugin Configuration
+# Author: Barpad
+# Version: 1.0.0
+
+# Default game settings
+game:
+  # Default countdown time in seconds for the first round
+  default-starting-seconds: 5
+  # How many rounds before the countdown decreases by 1 second
+  default-change-every-rounds: 3
+  # Minimum countdown time (cannot go below this value)
+  minimum-countdown: 1
+  # Delay between rounds in ticks (20 ticks = 1 second)
+  round-delay: 60
+  # Duration of firework celebration in seconds
+  fireworks-duration: 5
+  # Number of fireworks per second during celebration
+  fireworks-per-second: 5
+
+# Plugin messages (supports color codes with &)
+# Full Paper Adventure support: legacy (&a, &c), hex (#FF0000), MiniMessage (<red>, <gradient>, <rainbow>)
+messages:
+  # General messages
+  no-permission: "<red>You do not have permission to use this command!</red>"
+  only-players: "<red>This command can only be used by players!</red>"
+
+  # Platform setup messages
+  platform-mode-enabled: "<yellow>Platform setup mode has been enabled!</yellow>"
+  platform-click-instruction: "<yellow>Click on two opposite corners of the platform area!</yellow>"
+  platform-first-corner: "<green>First corner set! Click second corner.</green>"
+  platform-second-corner: "<green>The second corner is set! The platform is ready.</green>"
+  platform-not-set: "<red>First, set up the platform using /colormix setplatform!</red>"
+
+  # Game control messages
+  game-started: "<green>DuckyColorMix has been started!</green>"
+  game-stopped: "<red>DuckyColorMix was detained!</red>"
+  game-already-active: "<red>DuckyColorMix already in progress!</red>"
+  game-not-active: "<red>DuckyColorMix is not active!</red>"
+  game-paused: "<yellow>DuckyColorMix has been suspended!</yellow>"
+  game-resumed: "<green>DuckyColorMix has been resumed!</green>"
+  game-already-paused: "<red>DuckyColorMix is already on hold!</red>"
+  game-not-paused: "<red>DuckyColorMix is not suspended!</red>"
+  game-paused-by-player: "<yellow>You paused the game DuckyColorMix!</yellow>"
+  game-resumed-by-player: "<green>You have resumed the game DuckyColorMix!</green>"
+  game-settings: "<yellow>Starting seconds: <bold>{seconds}</bold>, change every <bold>{rounds}</bold> rounds</yellow>"
+
+  # Round messages
+  round-header: "<gradient:#FFD700:#FFA500><bold>=== DuckyColorMix - Round {round} ===</bold></gradient>"
+  players-count: "<aqua><bold>Players in the game: <white>{count}</white></bold></aqua>"
+  safe-color: "<gradient:#FFFF00:#FFD700>Safe color:</gradient> {color}"
+  countdown-info: "<yellow>Countdown: <bold>{seconds}</bold> seconds</yellow>"
+  unsafe-colors-removed: "<gradient:#FF0000:#FF4500><bold> The unsafe colors are gone! </bold></gradient>"
+
+  # Game end messages
+  winner-announcement: "<rainbow><bold>🎉 {player} won the game DuckyColorMix! 🎉</bold></rainbow>"
+  no-winner: "<red>Nobody won this round!</red>"
+
+  # Action bar message (animated stars will be added automatically)
+  action-bar-format: "<gradient:#FFFF00:#FFD700><bold><underlined>SAFE COLOR:</underlined></bold></gradient> {color}"
+
+  # Help messages
+  help-header: "<rainbow><bold><underlined>=== DuckyColorMix Commands ===</underlined></bold></rainbow>"
+  help-start: "<yellow>/colormix start [seconds] [change_every_round]</yellow><white> - Starts the game</white>"
+  help-stop: "<yellow>/colormix stop</yellow><white> - Pauses the game completely</white>"
+  help-pause: "<yellow>/colormix break</yellow><white> - Pauses the game</white>"
+  help-resume: "<yellow>/colormix resume</yellow><white> - Resume the game</white>"
+  help-setplatform: "<yellow>/colormix setplatform</yellow><white> - Sets the platform area</white>"
+  help-reload: "<yellow>/colormix reload</yellow><white> - Reloads the configuration</white>"
+  help-example: "<gray>Przykład: /colormix start 10 2 (10 seconds, decreases every 2 rounds)</gray>"
+
+  # Reload messages
+  config-reloaded: "<gradient:#00FF00:#32CD32><bold>✓ The configuration has been reloaded!</bold></gradient>"
+
+  # Error messages
+  invalid-seconds: "<red>Invalid number of seconds!</red>"
+  invalid-rounds: "<red>Incorrect value of change after how many rounds!</red>"
+  seconds-too-low: "<red>The number of seconds must be greater than 0!</red>"
+  rounds-too-low: "<red>Change after how many rounds must be greater than 0!</red>"
+
+  # Update checker messages
+  update-available: "<gradient:#FFD700,#FFA500>&l🔔 DuckyColorMix</gradient> &8» &eNew version available: &c{version} &7(current: {current})"
+  update-download: "<gradient:#FFD700,#FFA500>&l📥 DuckyColorMix</gradient> &8» &eDownload: &a{url}"
+  update-up-to-date: "<green>DuckyColorMix is up to date! Version: <bold>{version}</bold></green>"
+  update-check-failed: "<red>Failed to check for DuckyColorMix updates: <bold>{error}</bold></red>"
+
+# Color names (used for messages)
+colors:
+  WHITE: "WHITE"
+  ORANGE: "ORANGE"
+  MAGENTA: "MAGENTA"
+  LIGHT_BLUE: "LIGHT BLUE"
+  YELLOW: "YELLOW"
+  LIME: "LIME"
+  PINK: "PINK"
+  GRAY: "GRAY"
+  LIGHT_GRAY: "LIGHT GRAY"
+  CYAN: "CYAN"
+  PURPLE: "PURPLE"
+  BLUE: "BLUE"
+  BROWN: "BROWN"
+  GREEN: "GREEN"
+  RED: "RED"
+  BLACK: "BLACK"
