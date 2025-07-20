@@ -28,24 +28,7 @@ A competitive mini-game plugin for Paper 1.18.2+ featuring dynamic color-based s
 | `/colormix setplatform` | 🏗️ Set up the platform area | `duckycolormix.colormix` |
 | `/colormix reload` | 🔄 Reload plugin configuration | `duckycolormix.colormix` |
 
-**Aliases:** `/cm`, `/dcm` 🔗
-
-## Installation 📦
-
-**REQUIREMENTS:** Paper 1.16+ (Does NOT work on Spigot/Bukkit) ⚠️
-
-1. Build the plugin using Gradle: 🔨
-   ```bash
-   ./gradlew shadowJar
-   ```
-
-2. Copy the JAR file from `build/libs/` to your Paper server's `plugins/` folder. 📁
-
-3. Start/restart your server. 🔄
-
-4. The plugin will generate a default configuration file. ⚙️
-
-## Quick Start Guide 🚀
+**Aliases:** `/cm`, `/dcm` `/duckycolormix` 🔗
 
 ### 1. Set Up Platform 🏗️
 ```
